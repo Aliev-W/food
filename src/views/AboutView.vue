@@ -21,20 +21,34 @@ export default {
 <style lang="scss" scoped>
 .about{
    display: flex;
-   justify-content: center;
-   margin-top: 100px;
-}
+   justify-content: space-between;
+   margin: auto;
 
-.about img{
+   @media (max-width:750px) {
+      justify-content: space-around;
+      }
+
+   img{
+   margin-top: 150px;
    border-radius: 35px;
+   margin-left: 200px;
+
+   @media(max-width: 1315px){
+      width: 300px;
+      height: 300px;
+
+      @media (max-width:750px) {
+         width: 150px;
+         height: 150px;
+      }
+   }
 }
 
-.about .us{
-   margin-left: 130px;
-   margin-top: 100px;
-}
+.us{
+   margin-right: 200px;
+   margin-top: 150px;
 
-.about .us h4{
+   h4{
    
    font-family: Roboto;
    font-weight: 500;
@@ -46,9 +60,13 @@ export default {
    text-transform: uppercase;
    color: #DC780B;
    opacity: 0.7;
+
+   @media (max-width:750px) {
+      margin: 0 auto;
+      }
 }
 
-.about .us h3{
+h3{
    width: 500px;
    font-family: 'Philosopher';
    font-weight: 700;
@@ -56,9 +74,13 @@ export default {
    line-height: 41px;
    color: #150C01;
    margin-top: 10px;
+
+   @media (max-width:750px) {
+      font-size: 20px;
+      }
 }
 
-.about .us p{
+p{
    width: 500px;
    margin-top: 30px;
    font-family: Roboto;
@@ -69,7 +91,7 @@ export default {
    opacity: 0.7;
 }
 
-.about .us button{
+button{
    width: 142px;
    height: 42px;
    background: #DC780B;
@@ -83,5 +105,8 @@ export default {
    font-weight: 500;
    font-size: 16px;
    line-height: 19px;
+}
+}
+
 }
 </style>

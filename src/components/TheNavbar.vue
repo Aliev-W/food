@@ -27,7 +27,6 @@
             
         </ul>
         </transition>
-        
         </nav>
         <a href="#"><button class="btn">Booking Now</button></a>
     </header>
@@ -105,6 +104,7 @@ header{
    @media(min-width: 1140px){
       max-width: 1140px;
    }
+
    ul,
    .link{
       display: flex;
@@ -113,7 +113,7 @@ header{
       color: #150C01;
       list-style: none;
       text-decoration: none;
-      
+   
    }
    
    li{
@@ -139,7 +139,6 @@ header{
       img{
          width: 44px;
          transform: .5s ease all;
-
       }
    }
 
@@ -149,9 +148,12 @@ header{
       flex: 1;
       justify-content: flex-start;
       margin-left: 40px;
+
+      @media(max-width: 1315px){
+      text-align: center;
+      justify-content: center;
    }
-
-
+   }
 
    .icon{
       display: flex;
@@ -169,14 +171,9 @@ header{
       }
    }
 
-   
-
-
    .icon-active{
       transform: rotate(180deg);
    }
-
-   
 
    .dropdown-nav{
       display: flex;
@@ -214,7 +211,6 @@ header{
 }
 }
 
-
 .btn{
       position: absolyut;
    width: 155px;
@@ -226,14 +222,13 @@ header{
    margin-top: 30px;
    margin-left: 460px;
    
-
    font-family: Roboto;
    font-weight: 400;
    font-size: 16px;
    line-height: 19px;
    color: #fff;
 
-    @media(max-width: 1140px){
+    @media(max-width: 1315px){
       display: none;
    }
    }
@@ -256,65 +251,4 @@ header{
       }
    }
 }
-
-
-
-// header{
-//     top: 0;
-//     left: 0;
-//     width: 100%;
-//     padding: 40px 100px;
-//     z-index: 10000;
-//     display: flex;
-//     justify-content: space-between;
-//     align-items: center;
-//     transform: 0.5s;
-// }
-
-// header .navigation{
-//     display: flex;
-//     justify-content:flex-start;
-//     align-items: center;
-// }
-
-// header .navigation li{
-//     list-style: none;
-//     margin-left: 40px;
-//     font-family: Roboto;
-// }
-
-// header .navigation li a img{
-//    width: 45px;
-//    height: 45px;
-// }
-
-// header .navigation li a{
-//     text-decoration: none;
-//     color: #150C01;
-//     font-size: 16px;
-//     font-weight: 500;
-//     opacity: 0.6;
-// }
-
-// header .navigation li a:hover{
-//     color: #DC780B;
-// }
-
-// header .btn{
-//    position: absolyut;
-//    width: 155px;
-//    height: 46px;
-//    background: #DC780B;
-//    border-radius: 5px;
-//    border: 0;
-//    cursor: pointer;
-//    margin-right: 50px;
-
-//    font-family: Roboto;
-//    font-weight: 400;
-//    font-size: 16px;
-//    line-height: 19px;
-//    color: #fff;
-// }
-
 </style>
