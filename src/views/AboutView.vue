@@ -25,6 +25,7 @@ export default {
    margin: auto;
 
    @media (max-width:750px) {
+      display: grid;
       justify-content: space-around;
       }
 
@@ -33,13 +34,16 @@ export default {
    border-radius: 35px;
    margin-left: 200px;
 
-   @media(max-width: 1315px){
+   @media(max-width: 1440px){
       width: 300px;
-      height: 300px;
+      height: 280px;
 
       @media (max-width:750px) {
          width: 150px;
-         height: 150px;
+         height: 140px;
+         align-items: center;
+         margin: 120px auto;
+         margin-bottom: 0;
       }
    }
 }
@@ -48,6 +52,12 @@ export default {
    margin-right: 200px;
    margin-top: 150px;
 
+
+   @media (max-width:750px) {
+      margin: 20px auto;
+      text-align: center;
+      }
+
    h4{
    
    font-family: Roboto;
@@ -55,7 +65,6 @@ export default {
    font-size: 16px;
    line-height: 24px;
    display: flex;
-   align-items: center;
    letter-spacing: 0.2em;
    text-transform: uppercase;
    color: #DC780B;
@@ -63,6 +72,7 @@ export default {
 
    @media (max-width:750px) {
       margin: 0 auto;
+      justify-content: center;
       }
 }
 
@@ -76,7 +86,8 @@ h3{
    margin-top: 10px;
 
    @media (max-width:750px) {
-      font-size: 20px;
+      font-size: 22px;
+      line-height:30px;
       }
 }
 
@@ -89,6 +100,11 @@ p{
    line-height: 24px;
    color: #150C01;
    opacity: 0.7;
+
+   @media (max-width:750px) {
+      margin-top: 20px;
+      font-size: 16px;
+      }
 }
 
 button{
@@ -105,6 +121,13 @@ button{
    font-weight: 500;
    font-size: 16px;
    line-height: 19px;
+
+   @media (max-width:750px) {
+      width: 120px;
+      height: 30px;
+      font-size: 15px;
+      font-weight: 400;
+      }
 }
 }
 

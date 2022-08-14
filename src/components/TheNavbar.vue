@@ -149,7 +149,7 @@ header{
       justify-content: flex-start;
       margin-left: 40px;
 
-      @media(max-width: 1315px){
+      @media(max-width: 1440px){
       text-align: center;
       justify-content: center;
    }
@@ -228,8 +228,12 @@ header{
    line-height: 19px;
    color: #fff;
 
-    @media(max-width: 1315px){
-      display: none;
+    @media(max-width: 1440px){
+      margin-right: 150px;
+
+      @media (max-width: 1350px) {
+         display: none;
+      }
    }
    }
 

@@ -35,9 +35,8 @@ export default {
 
 .Features{
    text-align: center;
-}
 
-.Features p{
+   p{
    font-family: Roboto;
    font-weight: 500;
    font-size: 16px;
@@ -45,9 +44,9 @@ export default {
    letter-spacing: 0.2em;
    color: #DC780B;
    opacity: 0.7;
-   margin-top: 100px;
 }
-.Features h3{
+
+h3{
    font-family: Philosopher;
    font-weight: 700;
    font-size: 32px;
@@ -60,16 +59,19 @@ export default {
 .cards{
    display: flex;
    justify-content: center;
-   margin-top: 45px;
+   margin-top: 70px;
    gap: 150px;
-}
 
-.cards .card{
+   @media (max-width:1200px) {
+      display: grid;
+      gap: 20px;
+   }
+
+   .card{
    width: 300px;
    text-align: center;
-}
 
-.cards .card .block{
+   .block{
    position: absolute;
    display: flex;
    justify-content: center;
@@ -82,11 +84,7 @@ export default {
    margin-left: 105px;
 }
 
-.cards .card img{
-   margin-top: 20px;
-}
-
-.cards .card h4{
+h4{
    margin-top: 50px;
    font-family: Philosopher;
    font-weight: 700;
@@ -95,7 +93,11 @@ export default {
    color: #150C01;
 }
 
-.cards .card h5{
+img{
+   margin-top: 20px;
+}
+
+h5{
    font-family: Roboto;
    font-weight: 400;
    font-size: 16px;
@@ -104,5 +106,8 @@ export default {
    color: #150C01;
    opacity: 0.7;
    margin-top: 15px;
+}
+}
+}
 }
 </style>
